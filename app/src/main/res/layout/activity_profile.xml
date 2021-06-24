@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Profile"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/title_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingBottom="2dp"
+                android:textSize="16sp"
+                android:text="Username"
+                android:layout_below="@id/title_profile"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Username"
+                android:layout_below="@id/title_username"/>
+
+            <TextView
+                android:id="@+id/title_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="15dp"
+                android:textSize="16sp"
+                android:text="Gender"
+                android:layout_below="@id/tv_username"/>
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Gender"
+                android:layout_below="@id/title_gender"/>
+
+            <TextView
+                android:id="@+id/title_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="15dp"
+                android:textSize="16sp"
+                android:text="Phone Number"
+                android:layout_below="@id/tv_gender"/>
+
+            <TextView
+                android:id="@+id/tv_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Phone Number"
+                android:layout_below="@id/title_phoneNum"/>
+
+            <TextView
+                android:id="@+id/title_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="15dp"
+                android:textSize="16sp"
+                android:text="Wallet"
+                android:layout_below="@id/tv_phoneNum"/>
+
+            <TextView
+                android:id="@+id/tv_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="IDR Wallet"
+                android:layout_below="@id/title_wallet"/>
+
+            <TextView
+                android:id="@+id/title_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="15dp"
+                android:textSize="16sp"
+                android:text="Date of Birth"
+                android:layout_below="@id/tv_wallet"/>
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Date of Birth"
+                android:layout_below="@id/title_dob"/>
+
+            <TextView
+                android:id="@+id/title_topup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Top Up"
+                android:textAlignment="center"
+                android:layout_below="@id/tv_dob"/>
+
+            <RadioGroup
+                android:id="@+id/rg_topup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_topup"
+                android:paddingLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/rb_250"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 250.000"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 500.000"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_1000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 1.000.000"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_topup"
+                android:layout_margin="20dp"
+                android:inputType="textPassword"
+                android:hint="Insert your password here"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:layout_centerHorizontal="true"
+                android:text="Confirm"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
